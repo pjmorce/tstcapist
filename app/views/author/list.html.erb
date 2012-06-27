@@ -1,0 +1,23 @@
+
+
+<table class="pretty">
+  <tr>
+    <th>Id</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Phone</th>
+    <th>Email</th>
+    <th>Company</th>
+  </tr>
+  <% for author in @authors %>
+    <tr>
+      <td><%= author.id %></td>
+      <td><%= author.first_name %></td>
+      <td><%= author.last_name %></td>
+      <td><%= author.phone %></td>
+      <td><%= author.email %></td>
+      <td><%= author.company %></td>
+    </tr>
+  <% end %>
+</table>
+
